@@ -11,17 +11,17 @@ public class Main {
     }
 
     public static int[] unesi(){
-        System.out.print("Unesite velicinu niza: ");
+        System.out.print("Enter size of array: ");
         int n = scanner.nextInt();
         int[] niz = new int[n];
         for(int i=0;i<n;i++){
-            System.out.print("Unesite broj: ");
+            System.out.print("Enter number: ");
             boolean provera = scanner.hasNextInt();
             if(provera){
                 niz[i]=scanner.nextInt();
             }
             else{
-                System.out.println("Niste uneli broj");
+                System.err.println("You didn't enter number!");
                 scanner.next();
             }
         }
