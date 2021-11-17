@@ -11,7 +11,7 @@ public class Main {
     }
 
     public static int[] unesi(){
-        System.out.print("Enter size of array: ");
+        System.out.print("Enter size of array, please: ");
         int n = scanner.nextInt();
         int[] niz = new int[n];
         for(int i=0;i<n;i++){
